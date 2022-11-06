@@ -1,0 +1,2 @@
+from CHOUSE import *
+génareur()
