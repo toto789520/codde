@@ -26,6 +26,8 @@ def génareur():
     nn = 0
     for i in lereminu :
         randome = random_minu()
+        if randome in pnnluist : 
+            randome = random_mag()
         résulta = (str(i) + " = " + randome + " = " + str(nn))
         print(résulta)
         nnlist.append(str(i))
@@ -43,4 +45,11 @@ def encodin(mères) :
     for i in mères:
         pov = bon.index(i)
         code = code + pasbon[pov]
+    return code
+
+def déencodin(mères) :
+    code = ""
+    for i in mères:
+        pov = pasbon.index(i)
+        code = code + bon[pov]
     return code
